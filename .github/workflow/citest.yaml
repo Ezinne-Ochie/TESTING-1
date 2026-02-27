@@ -1,0 +1,9 @@
+
+name: github actions demo 
+on: [push]
+jobs:
+ test:
+    runs on: ububtu-latest
+steps: 
+-run: echo "this job was automatically triggrred on $[github.event_name]"
+-run: python main.py
